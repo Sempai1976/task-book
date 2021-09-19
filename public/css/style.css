@@ -1,0 +1,161 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  max-width: 1250px;
+  padding: 30px 15px 20px;
+}
+
+.page-header {
+	padding-bottom: 25px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.pagination {
+	padding-top: 35px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.username {
+	font-weight: bold;
+}
+.username a {
+	color: #222;
+	text-decoration: none;
+}
+.username a:hover {
+    color: #0056b3;
+}
+
+.nav-login {
+	display: inline-block; 
+	color: rgba(0,0,0,.5);
+}
+.nav-login.first {
+	padding: 0px;
+}
+.nav-login.sep {
+	padding: 0 7px;
+}
+@media screen and (min-width:768px){
+	.nav-login.first {
+	   padding: 0 0 0 7px;
+    }
+	.nav-login.sep {
+	    padding: 0 0 0 7px;
+    }
+}
+
+span.sort_arr {
+	padding-left: 5px; cursor: pointer;
+}
+span.sort_arr.active, span.sort_arr:hover {
+	color: #007bff;
+}
+
+#modalLogin {
+	font-family: 'Varela Round', sans-serif;
+}
+
+.modal-login {
+		color: #636363;
+		width: 350px;
+}
+.modal-login .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+}
+.modal-login .modal-header {
+		border-bottom: none;
+		position: relative;
+		justify-content: center;
+}
+.modal-login h4 {
+		text-align: center;
+		font-size: 26px;
+}
+.modal-body .login_error { 
+	    display:none;
+}
+.modal-login  .form-group {
+		position: relative;
+}
+.modal-login i {
+		position: absolute;
+		left: 13px;
+		top: 11px;
+		font-size: 18px;
+}
+.modal-login .form-control {
+		padding-left: 40px;
+}
+.modal-login .form-control:focus {
+		border-color: #00ce81;
+}
+.modal-login .form-control, .modal-login .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+}
+.modal-login .hint-text {
+		text-align: center;
+		padding-top: 10px;
+}
+.modal-login .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+}
+.modal-login .btn {
+		background: #00ce81;
+		border: none;
+		line-height: normal;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+		background: #00bf78;
+}
+.modal-login .modal-footer {
+		background: #ecf0f1;
+		border-color: #dee4e7;
+		text-align: center;
+		margin: 0 -20px -20px;
+		border-radius: 5px;
+		font-size: 13px;
+		justify-content: center;
+}
+.modal-login .modal-footer a {
+		color: #999;
+}
+#clear_search {
+	margin-left: 6px;
+	display: none;
+}
+#clear_search i {
+	font-size: 18px;
+}

@@ -130,7 +130,7 @@ if ($stmt = $mysqli->prepare('SELECT t.*, u.group_id FROM tasks AS t LEFT JOIN u
 <!-- End Modal HTML -->
 
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-topk" role="navigation">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
             <a class="navbar-brand" href="/" role="banner">We solve tasks</a>
  
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Switch navigation">
@@ -171,21 +171,7 @@ if ($stmt = $mysqli->prepare('SELECT t.*, u.group_id FROM tasks AS t LEFT JOIN u
                     <button class="btn btn-success" type="submit">Search</button>
                     <button id="clear_search" class="btn btn-danger" title="Clear search data" <?php if (!empty($search_str)) { ?>style="display: block;"<?php } ?>><i class="fa fa-remove"></i></button>
                 </form>
-
-                <!--div class="form-group-sort">
-                    <select class="form-control" id="exampleFormControlSelect1" onchange="Tasks_sort_by(this, 'sel')">
-                        <option value="sort_by=user_name_asc"<?php if ($sort_by == 'sort_by=user_name_asc') echo ' selected="selected"' ?>>Sort tasks by Username &uArr;</option>
-                        <option value="sort_by=user_name_desc"<?php if ($sort_by == 'sort_by=user_name_desc') echo ' selected="selected"' ?>>Sort tasks by Username &dArr;</option>
-                        <option value="sort_by=email_asc"<?php if ($sort_by == 'sort_by=email_asc') echo ' selected="selected"' ?>>Sort tasks by Email &uArr;</option>
-                        <option value="sort_by=email_desc"<?php if ($sort_by == 'sort_by=email_desc') echo ' selected="selected"' ?>>Sort tasks by Email &dArr;</option>
-                        <option value="sort_by=created_asc"<?php if ($sort_by == 'sort_by=created_asc') echo ' selected="selected"' ?>>Sort tasks by Created &uArr;</option>
-                        <option value="sort_by=created_desc"<?php if ($sort_by == 'sort_by=created_desc') echo ' selected="selected"' ?>>Sort tasks by Created &dArr;</option>
-                        <option value="sort_by=updated_asc"<?php if ($sort_by == 'sort_by=updated_asc') echo ' selected="selected"' ?>>Sort tasks by Updated &uArr;</option>
-                        <option value="sort_by=updated_desc"<?php if ($sort_by == 'sort_by=updated_desc') echo ' selected="selected"' ?>>Sort tasks by Updated &dArr;</option>
-                        <option value="sort_by=status_asc"<?php if ($sort_by == 'sort_by=status_asc') echo ' selected="selected"' ?>>Sort tasks by Status &uArr;</option>
-                        <option value="sort_by=status_desc"<?php if ($sort_by == 'sort_by=status_desc') echo ' selected="selected"' ?>>Sort tasks by Status &dArr;</option>
-                     </select>
-                </div-->
+            </div>
         </nav>
     </header>
 
